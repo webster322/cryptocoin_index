@@ -14,7 +14,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 group :development, :test do
   gem 'byebug'
-  #gem 'sqlite3'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -23,3 +23,7 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'pg', '0.18.2'
+  gem 'rails_12factor', '0.0.3'
+end
